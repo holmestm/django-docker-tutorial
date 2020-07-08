@@ -5,7 +5,7 @@ Tutorial for Django
 2. Create a working directory for your Django project, copy the Dockerfile, docker-compose.yml and requirements.txt into that directory.
 3. Run (prefix with sudo if using Linux - if necessary) 
 ```
-docker-compose run web django-admin startproject django-workspace .
+docker-compose run web django-admin startproject myproject .
 ```
 4. If using Linux, also run
 ```
