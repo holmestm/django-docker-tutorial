@@ -3,8 +3,14 @@ Tutorial for Django
 
 1. Install docker for your machine.
 2. Create a working directory for your Django project, copy the Dockerfile, docker-compose.yml and requirements.txt into that directory.
-3. Run (prefix with sudo on Linux) docker-compose run web django-admin startproject contacts .
-4. If Linux, run sudo chown -R $USER:$USER .
+3. Run (prefix with sudo if using Linux - if necessary) 
+```
+docker-compose run web django-admin startproject django-workspace .
+```
+4. If using Linux, also run
+```
+sudo chown -R $USER:$USER .
+```
 5. Edit contacts/settings.py, replace the DATABASE section with:
 ```
 DATABASES = {
