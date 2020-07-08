@@ -11,7 +11,7 @@ docker-compose run web django-admin startproject myproject .
 ```
 sudo chown -R $USER:$USER .
 ```
-5. Edit contacts/settings.py, replace the DATABASE section with:
+5. Edit myproject/settings.py, replace the DATABASE section with:
 ```
 DATABASES = {
     'default': {
@@ -25,7 +25,7 @@ DATABASES = {
 }
 ``` 
 6. Run docker-compose up to start the environment
-7. Manage/create the files using your native editor e.g. vscode
+7. Manage/create the files using your native editor e.g. code myproject
 8. Run python commands using
 ```
 docker exec -it django_web_1 bash
