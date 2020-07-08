@@ -5,7 +5,7 @@ Tutorial for Django
 2. Create a working directory for your Django project, copy the Dockerfile, docker-compose.yml and requirements.txt into that directory.
 3. Run (prefix with sudo if using Linux - if necessary) 
 ```
-docker-compose run web django-admin startproject myproject .
+docker-compose run web django-admin startproject mysite .
 ```
 4. If using Linux, also run
 ```
@@ -25,12 +25,12 @@ DATABASES = {
 }
 ``` 
 6. Run docker-compose up to start the environment
-7. Manage/create the files using your native editor e.g. code myproject
+7. Manage/create the files using your native editor e.g. code ./
 8. Run python commands using
 ```
 docker exec -it django-docker-tutorial_web_1 bash
 ```
-9. Access the web server using http://localhost:8000
+9. Access the web server for 'mysite' using http://localhost:8000
 10. To access the built-in admin functionality:
 ```
 docker exec django-docker-tutorial_web_1 ./manage.py migrate
