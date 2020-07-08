@@ -28,13 +28,13 @@ DATABASES = {
 7. Manage/create the files using your native editor e.g. code myproject
 8. Run python commands using
 ```
-docker exec -it django_web_1 bash
+docker exec -it django-docker-tutorial_web_1 bash
 ```
 9. Access the web server using http://localhost:8000
 10. To access the built-in admin functionality:
 ```
-docker exec django_web_1 ./manage.py migrate
-docker exec -it django_web_1 ./manage.py createsuperuser
+docker exec django-docker-tutorial_web_1 ./manage.py migrate
+docker exec -it django-docker-tutorial_web_1 ./manage.py createsuperuser
 - create a user e.g. admin, email admin@admin.com, password admin
 - type 'y' to bypass password security check if required
 - open http://localhost:8000/admin and log in with admin/admin
